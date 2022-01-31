@@ -1,2 +1,2 @@
 #!/bin/bash
-grep --line-number "root" /etc/passwd
+grep --line-number "bin" /etc/passwd
