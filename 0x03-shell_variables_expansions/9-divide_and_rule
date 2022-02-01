@@ -1,2 +1,3 @@
 #!/bin/bash
-(echo $POWER / $DIVIDE)"%f\n"
+
+$(echo $POWER / $DIVIDE)"%f\n"
