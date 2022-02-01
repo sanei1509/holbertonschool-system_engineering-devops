@@ -1,2 +1,2 @@
 #!/bin/bash
-(expr $POWER / $DIVIDE)|"\n"
+(expr $POWER / $DIVIDE)"%f\n"
