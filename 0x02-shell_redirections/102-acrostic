@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c2"%f\n"
+cut -c 0 "%f\n"
