@@ -1,0 +1,2 @@
+#!/bin/bash
+user=$($PATH)|find ./$user -mindepth 0|wc -l
