@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 | tr '[:lower:]' '[:upper:]'"%f\n"
+cut -c 2-4 "%f\n"
