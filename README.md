@@ -2,6 +2,8 @@
 
 # System engineering devops
 
+## Description
+working with commands of the shell
 
 ## Links to each project of devops
 
