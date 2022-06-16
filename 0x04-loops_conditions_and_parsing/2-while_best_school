@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #script that print 10 times a str with WHILE
-i=0
+i="0"
 while [ $i -lt 10 ]
 do 
-	echo "BestSchool"
+	echo "Best School"
 	((i++))
 done
