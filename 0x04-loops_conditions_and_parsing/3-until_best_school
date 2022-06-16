@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#print 10 times a str with UNTIL
+i="0"
+until [ $i -gt 10 ]
+do
+	        echo "BestSchool"
+		i=$((i+1))
+done
