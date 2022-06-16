@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #checkear si un archivo existe y printear en base a eso
-file="school"	
+file="school"
 if [ -e "$file" ]
 then
-	echo "school file exist"
+	echo "school file exists"
 	if [ -s "$file" ]
 	then
 		echo "school file is not empty"
