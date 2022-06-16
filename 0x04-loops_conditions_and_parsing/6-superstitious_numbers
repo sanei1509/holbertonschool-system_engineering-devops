@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print numbers from 1 to 20 / with conditions
 #pos 4 , 9 , 17 - use CASE
-i="0"
+i="1"
 while [ $i -le 20 ]
 do
 	echo $i
