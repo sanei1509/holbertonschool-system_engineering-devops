@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print 10 times a str with UNTIL(op of while)
 i="0"
-until [ $i -gt 10 ]
+until [ $i -gt 9 ]
 do
 	        echo "Best School"
 		((i++))
