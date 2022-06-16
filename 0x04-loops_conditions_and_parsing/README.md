@@ -1,15 +1,22 @@
-# Sorting algorithms & Big O
+# Loops, conditions and parsing
 
 ## Language
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+SHELL
 
-name of the project → ****0x1B. C - Sorting algorithms & Big O****
+name of the project → ****0x04. Loops, conditions and parsing****
 <br>
+#
+## About Bash projects
+Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
 
-## Background Context
-this project is destined to be in pairs, we must program it both
+### man or help:
 
-**These are the concept that we wiil see:**
+``env``
+``cut``
+``for``
+``while``
+``until``
+``if``
 
 ## Learning Objectives
 
@@ -17,36 +24,16 @@ At the end of this project, you are expected to be able to  [explain to anyone](
 
 ### General
 
-- At least four different sorting algorithms
-- What is the Big O notation, and how to evaluate the time complexity of an algorithm
-- How to select the best sorting algorithm for a given input
-- What is a stable sorting algorithm
+- How to create ``SSH keys``
+- What is the advantage of using ``#!/usr/bin/env bash`` over ``#!/bin/bash``
+- How to use ``while``, ``until`` and for ``loops``
+- How to use ``if``, ``else``, ``elif`` and case condition statements
+- How to use the ``cut`` command
+- What are files and other ``comparison operators``, and how to use them
 
-##More Info
-Data Structure and Functions used
-
-````c
-````
-
-``print_array``, and ``print_list`` functions:
-
-````c
-void print_array(const int *array, size_t size)
-{
-    size_t i;
-
-    i = 0;
-    while (array && i < size)
-    {
-        if (i > 0)
-}
-````
-To print the elements worked in the algorithm with ``LISTS``
-````c
-void print_list(const listint_t *list)
-{
-    int i;
-````
+## More Info
+## Shellcheck
+``Shellcheck`` is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. Shellcheck is your friend! All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.
 
 ## Authors
 
