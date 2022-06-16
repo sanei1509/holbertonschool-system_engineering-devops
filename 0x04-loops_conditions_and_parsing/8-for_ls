@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#list a content of current directorty
+#Mostrando solo la parte despues del primer dash "-"
+
+for content in *
+do
+	echo "$content" | cut -d '-' -f 2
+done
