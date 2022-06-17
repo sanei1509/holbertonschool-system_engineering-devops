@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#print a string indefinidamente [loop infinity] with a sleep in each iteration
+while 'true'
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
