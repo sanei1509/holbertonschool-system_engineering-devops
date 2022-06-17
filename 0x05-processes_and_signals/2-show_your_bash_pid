@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Filtrar los procesos que tengan [BASH] || en fin encontrar el PID de nuestro proceso bash
+# shellcheck disable=SC2009
+ps -auxf | grep bash
