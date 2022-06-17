@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Mostrar el ID de proceso con [$$] o variable [$BASHPID]
+#echo $BASHPID -> cuando recibe un proceso secundario este devuelve el de ese
+#a diferencia de de $ [unica diferencia]
+echo $$
