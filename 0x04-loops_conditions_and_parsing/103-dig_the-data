@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#ahora ordenar los visitantes en base a IP & CODE de estado HTTP
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr
