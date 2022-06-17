@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#listar todos los procesos actuales corriendo
+#[a] selecciona todos los procesos
+#[u] muestra el id del usuario
+#[f] tree - muestra el formato completo
+#[x] incluye los que no podrían tener TTY
+ps -auxf
