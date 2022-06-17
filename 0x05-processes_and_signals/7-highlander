@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#receive SIGTERM signal with a message
+#SIGTERM es similar SIGINT -> solicita el fin del proceso
+trap "echo I am invincible!!!" SIGTERM
+
+while 'true'
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
