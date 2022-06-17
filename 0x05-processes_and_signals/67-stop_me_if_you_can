@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#[COPY] -> task 6  4-to_infinity_and_beyond <-> 7-highlander
+#sin usar [kill] o [killall]
+pkill -15 -f "7-highlander"
