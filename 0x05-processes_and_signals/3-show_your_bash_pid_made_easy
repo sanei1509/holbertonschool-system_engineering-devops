@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#print PID and only the name of the "bash" process
+#use prgep [-l]
+pgrep -l "bash"
