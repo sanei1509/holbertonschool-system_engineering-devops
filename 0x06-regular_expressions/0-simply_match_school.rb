@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
-#reg exp. to match "School"
-
-puts ARGV[0].scan(/[School]/).join
+#reg exp. to match "School" -> correction Holberton :/
+puts ARGV[0].scan(/Holberton/).join
