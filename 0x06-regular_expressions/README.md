@@ -3,6 +3,8 @@
 ## Language
 Bash | Ruby
 
+### also can work in ``python`` or ``javascript``
+
 name of the project → ****0x06. Regular expression****
 <br>
 #
