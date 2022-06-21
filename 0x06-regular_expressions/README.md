@@ -1,40 +1,30 @@
-# Loops, conditions and parsing
+# Regular expression
 
 ## Language
-BASH
+Bash | Ruby
 
-name of the project → ****0x04. Loops, conditions and parsing****
+name of the project → ****0x06. Regular expression****
 <br>
 #
 ## About Bash projects
 Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
 
-### man or help:
+## Background Context
+For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
 
-``env``
-``cut``
-``for``
-``while``
-``until``
-``if``
+Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
 
-## Learning Objectives
-
-At the end of this project, you are expected to be able to  [explain to anyone](https://intranet.hbtn.io/rltoken/bUxwUIRhI1ehqqr1UF3HaA "explain to anyone"),  **without the help of Google**:
-
-### General
-
-- How to create ``SSH keys``
-- What is the advantage of using ``#!/usr/bin/env bash`` over ``#!/bin/bash``
-- How to use ``while``, ``until`` and for ``loops``
-- How to use ``if``, ``else``, ``elif`` and case condition statements
-- How to use the ``cut`` command
-- What are files and other ``comparison operators``, and how to use them
-
-## More Info
-## Shellcheck
-``Shellcheck`` is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. Shellcheck is your friend! All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.
-
+````
+sylvain@ubuntu$ cat example.rb
+#!/usr/bin/env ruby
+puts ARGV[0].scan(/127.0.0.[0-9]/).join
+sylvain@ubuntu$
+sylvain@ubuntu$ ./example.rb 127.0.0.2
+127.0.0.2
+sylvain@ubuntu$ ./example.rb 127.0.0.1
+127.0.0.1
+sylvain@ubuntu$ ./example.rb 127.0.0.a
+````
 ## Authors
 
 [Santiago Neira](https://github.com/sanei1509)
