@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# queremos mostrar todos los puertos que estan escuchando
+# netstat command nos muestra las conexiones de red
+# -l -> solo los sockets
+# -p -> PID y nombre del programa
+netstat --listening --program
