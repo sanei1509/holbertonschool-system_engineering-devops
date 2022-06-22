@@ -3,4 +3,4 @@
 #^ -> indicamos comienzo
 #? -> indica el final del string 
 
-puts ARGV[0].scan(/^h.n$)
+puts ARGV[0].scan(/^h.n$/)
