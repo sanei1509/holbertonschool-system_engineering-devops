@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#mostrar el pin 5 veces y cortar
+# ping -> request a la host de la red
+# ICMP envía al host un determinado datagrama para solicitar una respuesta
+# El protocolo ICMP se ocupa de los errores en las redes TCP/IP.
+# -c <count> -> cuenta el numero de paquetes que recibe 
+if [[ -z $1 ]]
+then
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+	ping $1 -c 5
+fi
