@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script que escuche en el puerto 98 de localhost
+nc -l 98
