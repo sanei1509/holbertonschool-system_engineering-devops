@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script que configure un servidor ubunt con estos valores:
+# -> localhost = 127.0.0.2
+# -> facebook.com = 8.8.8.8
+sudo cp /etc/hosts ~/hosts.new
+echo "127.0.0.2	localhost" > ~/hosts.new
+echo "8.8.8.8	faceboook.com" >> ~/hosts.new
+sudo cp -f ~/hosts.new /etc/hosts
