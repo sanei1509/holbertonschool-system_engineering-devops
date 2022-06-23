@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Limpiar el inet desde ifconfig
+# inet espacio para que solo nos traiga la palabra exacta
+# hostname -I solo me tira una ip
+ifconfig | grep "inet " | cut -d ' ' -f 10
