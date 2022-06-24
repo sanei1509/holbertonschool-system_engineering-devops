@@ -4,9 +4,9 @@
 # ICMP envía al host un determinado datagrama para solicitar una respuesta
 # El protocolo ICMP se ocupa de los errores en las redes TCP/IP.
 # -c <count> -> cuenta el numero de paquetes que recibe 
-if [ $# != 1 ]
+if [ $# == 1 ]
 then
-	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-else
 	ping $1 -c 5
+else
+        echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 fi
