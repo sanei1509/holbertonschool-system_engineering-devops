@@ -11,6 +11,10 @@ working with commands of the shell
 2. [Shell permissions](./0x01-shell_permissions)
 3. [Shell redirections](./0x02-shel_redirections)
 4. [Shell variables ](./0x03-shell_variables_expansions)
+5. [0x05-processes_and_signals](./0x05-processes_and_signals)
+6. [0x06-regular_expressions ](./0x06-regular_expressions)
+7. [0x07-networking_basics ](./0x07-networking_basics)
+8. [0x08-networking_basics_2 ](./0x08-networking_basics_2)
 
 ### Author
 ``Santiago Neira </>``
