@@ -35,7 +35,7 @@ On a whiteboard, design a one server web infrastructure that hosts the website t
 ## Task 1
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
 
-<img width="1518" alt="1-smal" src="https://user-images.githubusercontent.com/69850751/179082290-574d74f1-2af6-4dbd-82d7-3ae3a489d387.png">
+<img width="1518" alt="1-smal" src="https://user-images.githubusercontent.com/69850751/179084146-f200f0cf-bbd4-4507-8945-997456f75060.png">
 
 
 ## Task 2
