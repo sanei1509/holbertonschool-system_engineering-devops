@@ -27,6 +27,17 @@
 
 ## Description of each file:
 
+## Task 0
+On a whiteboard, design a one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
+
+## Task 1
+On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
+
+## Task 2
+On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
+
+## Task 3
+Aplication server VS Web server 
 
 ## Authors :pen:
 
