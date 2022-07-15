@@ -40,11 +40,12 @@ On a whiteboard, design a three server web infrastructure that hosts the website
 ## Task 2
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
 
+<img width="1599" alt="Task-2" src="https://user-images.githubusercontent.com/69850751/179145965-a5d98194-9ba3-42cf-b607-21e15522e325.png">
+
 ## Task 3
 Aplication server VS Web server 
 
-<img width="1599" alt="Task-2" src="https://user-images.githubusercontent.com/69850751/179145965-a5d98194-9ba3-42cf-b607-21e15522e325.png">
-
+<img width="1599" alt="Task-3" src="https://user-images.githubusercontent.com/69850751/179238113-27ab2964-6903-459c-82f9-41d7da60a0e5.png">
 
 ## Authors :pen:
 
