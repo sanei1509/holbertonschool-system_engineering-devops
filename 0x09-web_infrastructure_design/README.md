@@ -30,7 +30,7 @@
 ## Task 0
 On a whiteboard, design a one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
 
-<img width="1498" alt="Frame 7 (1)" src="https://user-images.githubusercontent.com/69850751/179136045-ec40ebbb-ac6d-4af5-a8f7-ba05a6f81340.png">
+<img width="1498" alt="Task-0 (1)" src="https://user-images.githubusercontent.com/69850751/179136926-d012272d-c602-4c2a-aacf-06e7aa983037.png">
 
 ## Task 1
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
