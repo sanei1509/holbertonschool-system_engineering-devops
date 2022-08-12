@@ -30,19 +30,22 @@
 ## Task 0
 On a whiteboard, design a one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
 
-<img width="1498" alt="0-small" src="https://user-images.githubusercontent.com/69850751/179072501-d5d3608b-cccf-4f33-b00f-9a3f02ad4f4f.png">
+<img width="1498" alt="Task-0 (1)" src="https://user-images.githubusercontent.com/69850751/179136926-d012272d-c602-4c2a-aacf-06e7aa983037.png">
 
 ## Task 1
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
 
-<img width="1518" alt="task-1" src="https://user-images.githubusercontent.com/69850751/179084623-47b24044-be5e-4798-b4b8-fec90d1d1d05.png">
-
+<img width="1599" alt="Task-1 (1)" src="https://user-images.githubusercontent.com/69850751/179145375-ff8560bf-3cde-45fe-9560-c7d9bb6ed3a1.png">
 
 ## Task 2
 On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
 
+<img width="1599" alt="Task-2" src="https://user-images.githubusercontent.com/69850751/179145965-a5d98194-9ba3-42cf-b607-21e15522e325.png">
+
 ## Task 3
 Aplication server VS Web server 
+
+<img width="1599" alt="Task-3" src="https://user-images.githubusercontent.com/69850751/179238113-27ab2964-6903-459c-82f9-41d7da60a0e5.png">
 
 ## Authors :pen:
 

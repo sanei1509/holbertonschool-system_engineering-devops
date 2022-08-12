@@ -1,0 +1,10 @@
+## What is a server?
+
+Servidor(software):
+es un programa que ofrece un servicio a otros programas (CLIENTES), que son usados a nivel local o a través de una red
+una red.
+La base de la comunicación es el model cliente-servidor.
+
+Servidor(hardware): máquina física integrada en una red informatica, denominada como "host".
+en principio todo ordenador puede usarse como "host" con el correspondiente software para servidores.
+
