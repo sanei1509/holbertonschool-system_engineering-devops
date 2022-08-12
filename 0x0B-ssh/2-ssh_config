@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Archivo de configuración del cliente
-Host *
+Host 54.226.169.216
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
