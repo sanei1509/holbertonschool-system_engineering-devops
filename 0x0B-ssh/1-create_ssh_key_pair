@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#create a RSA key pair
+# -f : flag para cambiar el nombre
+# -b : indica la cantidad de bits
+# -N : indica la clave passfrase
+ssh-keygen -f school -b 4096 -N betty
