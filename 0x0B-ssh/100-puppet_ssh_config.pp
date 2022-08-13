@@ -7,5 +7,4 @@ file_line { 'Identity file':
 file_line { 'disable password login':
     path    => '/etc/ssh/ssh_config',
     line    => '    PasswordAuthentication no',
-    replace => true,
 }
