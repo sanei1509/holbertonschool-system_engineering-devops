@@ -1,5 +1,11 @@
 # automatizar lo que hicimos en la task 2
-exec {'/etc/ssh/ssh_config':
-  command  => 'echo "	IdentityFile ~/.ssh/school" > /etc/ssh/ssh_config && echo "    PasswordAuthentication no" > /etc/ssh/ssh_config',
-  provider => 'shell'
+file_line { 'Identity file':
+  ensure => 'present',
+  path   => '/etc/ssh/ssh_config',
+  line   => '    IdentityFile ~/.ssh/school',
+}
+file_line { 'disable password login':
+    path    => '/etc/ssh/ssh_config',
+    line    => '    PasswordAuthentication no',
+    replace => true,
 }
