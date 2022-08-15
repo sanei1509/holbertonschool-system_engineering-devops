@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+#fix the server:
+#reseteando el servidor web apache
+sudo service apache2 restart
