@@ -1,1 +1,9 @@
 #!/usr/bin/env bash
+#script para instalar nginx
+#sobrescribir lo anterior del arcchivo:
+#por 'hello world'
+#Y volver a iniciar el servidor
+sudo apt update
+sudo apt -y install nginx
+sudo echo "Hello World" > /var/www/html/index.nginx-debian.html
+sudo service nginx restart
