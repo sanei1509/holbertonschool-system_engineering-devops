@@ -4,10 +4,11 @@
 # tee -> añade sin sobrescribir
 sudo apt update
 sudo apt -y install nginx
-echo "Hello World" > /var/www/html/index.html
-sudo sed -i '/server_name _;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-
+sudo chmod 777 /var/www/html/index.html
+echo 'Hello World' | sudo tee /var/www/html/index.html
 sudo touch /var/www/html/404-page.html
-sudo echo "Ceci n'est pas une page" > /var/www/html/404_page.html
-sudo sed -i '55i error_page 404 /404-page.html;' /etc/nginx/sites-available/default
+sudo chmod 777 /var/www/html/404-page.html
+sudo echo "Ceci n'est pas une page" > /var/www/html/404-page.html
+sudo sed -i '/server_name _;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+sudo sed -i '55i error_page 404 /404-page.html;' /etc/nginx/sites-enabled/default
 sudo service nginx restart
