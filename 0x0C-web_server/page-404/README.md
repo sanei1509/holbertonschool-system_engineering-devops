@@ -1,3 +1,3 @@
 # Preview
 
-<image src="/404-page.png"/>
+<img src="404-page.html" />
