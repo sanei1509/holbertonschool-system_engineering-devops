@@ -9,5 +9,5 @@ sudo sed -i '/server_name _;/a rewrite ^/redirect_me https://www.youtube.com/wat
 
 
 echo "Ceci n'est pas une page" > /var/www/html/404_page.html
-sudo sed -i "/server_name _;/a error_page 404 /404.html;\nlocation = /404_page.html {\nroot /var/www/html;\ninternal;\n}" /etc/nginx/sites-available/default
+sudo sed -i "/server_name _;error_page 404 /404_page.html;" /etc/nginx/sites-available/default
 sudo service nginx restart
