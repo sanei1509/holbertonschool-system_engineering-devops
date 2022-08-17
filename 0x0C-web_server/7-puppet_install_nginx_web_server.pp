@@ -13,15 +13,16 @@ file { '/var/www/html/index.html':
 }
 
 #redireccion 301 al video de youtube
-file_line { 'title':
+#task-> 3
+file_line { 'redireccion-301':
   ensure => present,
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;',
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
+#comprobar que nginx este funcionando
 service { 'nginx':
   ensure  => running,
   require => Package['nginx'],
 }
-
