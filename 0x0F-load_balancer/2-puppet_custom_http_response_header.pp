@@ -18,7 +18,7 @@ exec {'nginx':
 exec {'custom-header':
     provider => shell,
     command  => "sudo sed -i '/listen 80 default_server/a add_header X-Served-By ${hostname};' /etc/nginx/sites-enabled/default",
-    before   => Exec['restart'],
+    before   => Exec['reiniciar-nginx'],
 }
 
 #Reiniciar nginx
