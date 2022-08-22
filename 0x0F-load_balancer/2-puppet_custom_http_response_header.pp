@@ -11,12 +11,10 @@ package {'nginx':
 }
 
 #intentar crear el header
-file_line { 'custom-header':
-  ensure => present,
-    path => '/etc/nginx/sites-enabled/default',
-  line   => "   location / {
-  add_header X-Served-By ${hostname};",
-  match  => '^\tlocation / {',
+exec { 'add_header':
+  provider => shell,
+  command  => "sudo sed -i '/listen 80 default_server/a add_header X-Served-By ${hostname};' /etc/nginx/sites-enabled/default",
+  before   => Exec['restart_nginx'],
 }
 
 exec {'reiniciar nginx':
