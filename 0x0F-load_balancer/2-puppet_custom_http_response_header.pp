@@ -16,8 +16,7 @@ file_line { 'custom-header':
   ensure => present,
     path => '/etc/nginx/sites-available/default',
   after  => 'listen 80 default_server;',
-  line   => " 	location / {
-	add_header X-Served-By ${hostname};",
+  line   => "add_header X-Served-By ${hostname};",
 }
 
 exec {'reiniciar nginx':
