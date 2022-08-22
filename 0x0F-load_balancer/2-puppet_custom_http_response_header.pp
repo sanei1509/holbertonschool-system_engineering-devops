@@ -7,16 +7,16 @@ exec { 'update':
 
 #instalar nginx
 package {'nginx':
-  ensure => installed,
-  name   => 'nginx',
+  ensure => present,
 }
 
 #intentar crear el header
 file_line { 'custom-header':
   ensure => present,
-    path => '/etc/nginx/sites-enabled/default',
-  line   => "add_header X-Served-By ${hostname};",
-  match  => 'listen 80 default_server;',
+    path => '/etc/nginx/sites-available/default',
+  line   => "   location / {
+  add_header X-Served-By ${hostname};",
+  match  => '^\tlocation / {',
 }
 
 exec {'reiniciar nginx':
