@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-
 #los primeros scripts deben ser para que los servidores sean identicos
-# - instalar nginx y luego modificar el encabezado.
+
 sudo apt update
 sudo apt-get -y install nginx
 
