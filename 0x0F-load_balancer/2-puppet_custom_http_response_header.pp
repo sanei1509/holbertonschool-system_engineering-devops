@@ -13,10 +13,10 @@ package {'nginx':
 
 #intentar crear el header
 file_line { 'custom-header':
-  ensure  => present,
-    path  => '/etc/nginx/sites-available/default',
-    after => 'server {',
-  line    => " 	location / {
+  ensure => present,
+    path => '/etc/nginx/sites-available/default',
+  after  => 'listen 80 default_server;',
+  line   => " 	location / {
 	add_header X-Served-By ${hostname};",
 }
 
