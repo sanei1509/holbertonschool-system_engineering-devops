@@ -13,7 +13,7 @@ package {'nginx':
 #intentar crear el header
 file_line { 'custom-header':
   ensure => present,
-    path => '/etc/nginx/sites-available/default',
+    path => '/etc/nginx/sites-enabled/default',
   line   => "   location / {
   add_header X-Served-By ${hostname};",
   match  => '^\tlocation / {',
