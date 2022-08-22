@@ -15,8 +15,8 @@ package {'nginx':
 file_line { 'custom-header':
   ensure => present,
     path => '/etc/nginx/sites-enabled/default',
-  after  => 'listen 80 default_server;',
   line   => "add_header X-Served-By ${hostname};",
+  match  => 'listen 80 default_server;',
 }
 
 exec {'reiniciar nginx':
