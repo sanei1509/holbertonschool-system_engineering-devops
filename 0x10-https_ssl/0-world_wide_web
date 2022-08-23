@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Script para configurar el nombre del dominio
+
+#funcion para printear los datos y en el formato que nos piden
+domain_msg ()
+{ 
+	dig "$2.$1" | grep -A1 'ANSWER SECTION:' | grep "$2" | awk -v var="$2" '{print "The subdomain " var " is a " $4 " record and points to " $5}'
+}
+
+# imprimimos nuestros sub dominios
+if [ -z "$2" ]
+then
+	domain_msg "$1" "$2"
+	domain_msg "$1" "www"
+	domain_msg "$1" "lb-01"
+	domain_msg "$1" "web-01"
+	domain_msg "$1" "web-02"
+else
+	domain_msg "$1" "$2"
+fi
