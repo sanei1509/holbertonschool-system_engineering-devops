@@ -8,9 +8,8 @@ domain_msg ()
 }
 
 # imprimimos nuestros sub dominios
-if [ -z "$2" ]
+if [ -z $2 ]
 then
-	domain_msg "$1" "$2"
 	domain_msg "$1" "www"
 	domain_msg "$1" "lb-01"
 	domain_msg "$1" "web-01"
