@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# el servidor esta escuchando en el puerto equivocado
+# debemos reinidicarle el puerto 80
+sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
