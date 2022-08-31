@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Solucionar el servidor nginx corriendo como nginx (user)
+# Requirements:
+# * nginx must be running as nginx user
+# * nginx must be listening on all active IPs on port 8080
+# * You cannot use apt-get remove
+# * Write a Bash script that configures the container to fit the above
+
+# Libero el puerto 8080 para poder ocuparlo nuevamente
+# netstat -nlp -> podemos identificar los puerto y ver a apache2 corriendo en el 8080
+pkill apache2
+#cambiamo el puerto al 8080
+#cambio usuario www/data por nginx
+sudo sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+sudo sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+
+# confirmamos los cambios reiniciando el servidor
+sudo -u nginx service nginx restart
