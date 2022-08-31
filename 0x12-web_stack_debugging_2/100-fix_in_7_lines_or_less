@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#solucionar el problema anterio pero en 7 lineas o menos
 pkill apache2
 chmod 700 /etc/nginx/nginx.conf
 chown nginx:nginx /etc/nginx/nginx.conf
