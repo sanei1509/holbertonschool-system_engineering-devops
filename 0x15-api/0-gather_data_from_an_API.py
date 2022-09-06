@@ -13,9 +13,11 @@ if __name__ == "__main__":
     try:
         id_user = sys.argv[1]
         # url -> json con data sobre usuarios en un todolist
-        url_user = "https://jsonplaceholder.typicode.com/users/{}".format(id_user)
-        url_todos = "https://jsonplaceholder.typicode.com/todos?userId={}".format(id_user)
-        #DATA
+        url_user = "https://jsonplaceholder.typicode.com/users/{}"\
+                   .format(id_user)
+        url_todos = "https://jsonplaceholder.typicode.com/todos?userId={}"\
+                    .format(id_user)
+        # sDATA
         user_data = requests.get(url_user)
         todos_data = requests.get(url_todos)
         # DATA JSON para poder trabajar sobre los datos
@@ -24,11 +26,15 @@ if __name__ == "__main__":
         # formato a mostrar
         task_completed = 0
         task_total = 0
+        lista_completadas = []
         for dic in todos_json:
-            if(dic["completed"] == True):
+            if(dic["completed"]):
                 task_completed += 1
+                lista_completadas.append(dic["title"])
             task_total += 1
-        print("========formato===========")
-        print("Employee {} is done with tasks({}/{}):".format(user_json["name"], task_completed, task_total))
+        print("Employee {} is done with tasks({}/{}):"
+              .format(user_json["name"], task_completed, task_total))
+        for task in lista_completadas:
+            print("\t {}".format(task))
     except Exception as err:
         print(f"error en la recolección de datos {err}")
