@@ -26,9 +26,7 @@ if __name__ == "__main__":
         task_total = 0
         for dic in todos_json:
             if(dic["completed"] == True):
-                # print(dic["completed"])
                 task_completed += 1
-            # print(dic["completed"])
             task_total += 1
         print("========formato===========")
         print("Employee {} is done with tasks({}/{}):".format(user_json["name"], task_completed, task_total))
