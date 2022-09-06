@@ -21,9 +21,21 @@ try:
     user_json = user_data.json()
     todos_json = todos_data.json()
 
-    for dic in json:
-        content = "{ "{}": [{"task": "dic["title"]", "completed": TASK_COMPLETED_STATUS, "username": "dic["username"]"}]".format(dic["id"])
-        print(content)
-    # Itero sobre mis tareas 
-    # Luego de que tengo los datos voy a trabajar la exportación
-    # abrir el archivo con los permisos necesarios
+    dictionary = {}
+    lista_tareas = []
+    for task in todos_json:
+        sub_dic = {}
+        sub_dic['task'] = task['title']
+        sub_dic['completed'] = task['completed']
+        sub_dic['username'] = user_json["username"]
+        # armo mi propio formato de tareas
+        lista_tareas.append(sub_dic)
+    dictionary[id_user] = lista_tareas
+
+    print(dictionary)
+
+    with open("{}.json".format(id_user), "w") as outfile:
+        json.dump(dictionary, outfile)
+
+except Exception as err:
+    print(err)
