@@ -27,6 +27,7 @@ if __name__ == "__main__":
         task_completed = 0
         task_total = 0
         lista_completadas = []
+        # Itero sobre cada uno de mis tareas = diccionarios
         for dic in todos_json:
             if(dic["completed"]):
                 task_completed += 1
