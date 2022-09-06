@@ -38,4 +38,4 @@ if __name__ == "__main__":
         for task in lista_completadas:
             print("\t {}".format(task))
     except Exception as err:
-        print(f"error en la recolección de datos {err}")
+        print("error en la recolección de datos {}".format(err))
