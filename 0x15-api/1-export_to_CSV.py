@@ -33,7 +33,7 @@ try:
 
         for dic in todos_json:
             contenido.append(dic["userId"])
-            contenido.append(user_json["name"])
+            contenido.append(user_json["username"])
             contenido.append(dic["completed"])
             contenido.append(dic["title"])
             # creo una fila en el archivo CSV
