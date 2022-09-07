@@ -15,7 +15,7 @@ try:
 
     user_json = user_data.json()
     todos_json = todos_data.json()
-    
+
     with open("todo_all_employees.json", "w", newline='') as outfile:
         todos = {}
         # itero sobre los usuarios
@@ -23,7 +23,7 @@ try:
             lista_tareas = []
             # itero sobre las tareas
             for task in todos_json:
-                # (comparo) necesito ir almacenando usuario y respectivas 
+                # (comparo) necesito ir almacenando usuario y respectivas
                 if task["userId"] == user["id"]:
                     sub_dic = {}
                     sub_dic['username'] = user['username']
