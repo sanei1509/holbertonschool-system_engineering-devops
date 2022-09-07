@@ -16,8 +16,8 @@ try:
     user_json = user_data.json()
     todos_json = todos_data.json()
 
+    todos = {}
     with open("todo_all_employees.json", "w", newline='') as outfile:
-        todos = {}
         # itero sobre los usuarios
         for user in user_json:
             lista_tareas = []
